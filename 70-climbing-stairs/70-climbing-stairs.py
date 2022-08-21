@@ -1,7 +1,7 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
-        if n == 1:
-            return 1
+        if n < 3:
+            return n
         
         dp = [0 for _ in range(n)]
         dp[0] = 1
